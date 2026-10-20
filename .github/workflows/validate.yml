@@ -1,0 +1,43 @@
+name: Validate catalog
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.13'
+      - name: Check both client catalogs agree
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from urllib.parse import urlsplit
+          paths = ['.agents/plugins/marketplace.json', '.claude-plugin/marketplace.json']
+          catalogs = [json.loads(Path(path).read_text()) for path in paths]
+          assert all(c['name'] == 'agenteer-public' for c in catalogs)
+          def entries(catalog):
+              return [(p['name'], p['source'], p['description']) for p in catalog['plugins']]
+          assert entries(catalogs[0]) == entries(catalogs[1])
+          names = [p['name'] for p in catalogs[0]['plugins']]
+          assert names and len(names) == len(set(names))
+          for plugin in catalogs[0]['plugins']:
+              source = plugin['source']
+              assert source['source'] == 'url'
+              url = urlsplit(source['url'])
+              assert url.scheme == 'https' and url.netloc == 'github.com'
+              assert not (url.username or url.password or url.query or url.fragment)
+              assert url.path.startswith('/agenteer/') and url.path.endswith('.git')
+              assert f'https://github.com{url.path[:-4]}' in Path('README.md').read_text()
+          print('Both catalogs agree; plugin names, HTTPS sources and README links checked.')
+          PY
+      - name: Check whitespace
+        run: git diff --check

@@ -1,0 +1,19 @@
+{
+  "name": "agenteer-public",
+  "owner": {
+    "name": "Agenteer LLC",
+    "url": "https://agenteer.com"
+  },
+  "plugins": [
+    {
+      "name": "agentpeers",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agenteer/agentpeers.git"
+      },
+      "description": "Let your Codex and Claude Code sessions talk to each other.",
+      "homepage": "https://github.com/agenteer/agentpeers",
+      "license": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "agenteer-public",
+  "interface": {
+    "displayName": "Agenteer"
+  },
+  "plugins": [
+    {
+      "name": "agentpeers",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agenteer/agentpeers.git"
+      },
+      "description": "Let your Codex and Claude Code sessions talk to each other.",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
