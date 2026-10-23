@@ -9,10 +9,10 @@
       "name": "agentpeers",
       "source": {
         "source": "url",
-        "url": "https://github.com/agenteer/agentpeers.git"
+        "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "Let your Codex and Claude Code sessions talk to each other.",
-      "homepage": "https://github.com/agenteer/agentpeers",
+      "description": "Let your Claude Code and Codex sessions talk to each other.",
+      "homepage": "https://github.com/cshenx/agentpeers",
       "license": "MIT"
     }
   ]

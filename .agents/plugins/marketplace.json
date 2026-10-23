@@ -8,9 +8,9 @@
       "name": "agentpeers",
       "source": {
         "source": "url",
-        "url": "https://github.com/agenteer/agentpeers.git"
+        "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "Let your Codex and Claude Code sessions talk to each other.",
+      "description": "Let your Claude Code and Codex sessions talk to each other.",
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
