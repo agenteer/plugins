@@ -11,7 +11,7 @@
         "source": "url",
         "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "Let your Claude Code and Codex sessions talk to each other.",
+      "description": "The AgentPeers local connection: Claude Code ↔ Codex sessions.",
       "homepage": "https://github.com/cshenx/agentpeers",
       "license": "MIT"
     }
