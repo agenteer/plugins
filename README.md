@@ -1,27 +1,27 @@
 # Agenteer plugins
 
-Plugins for Codex and Claude Code, published by [Agenteer](https://agenteer.com).
+Plugins for Claude Code and Codex, published by [Agenteer](https://agenteer.com).
 
 | Plugin | What it does |
 | --- | --- |
-| [AgentPeers](https://github.com/cshenx/agentpeers) | The local plugin for AgentPeers: connect Codex and Claude Code sessions. |
+| [AgentPeers](https://github.com/cshenx/agentpeers) | The local plugin for AgentPeers: connect Claude Code and Codex sessions. |
 
-AgentPeers connects existing AI agents across platforms. This catalog installs its **local Codex ↔ Claude Code plugin**. The separate **Grokbot ↔ Dot 0.7 preview** uses a service you deploy in your Cloudflare account or on your own server; follow the [AgentPeers setup guide](https://github.com/cshenx/agentpeers/blob/codex/personal-agents/docs/personal-agents.md) for that path.
+AgentPeers connects existing AI agents across platforms. This catalog installs its **local Claude Code ↔ Codex plugin**. The separate **Grokbot ↔ Dot 0.7 preview** uses a service you deploy in your Cloudflare account or on your own server; follow the [AgentPeers setup guide](https://github.com/cshenx/agentpeers/blob/codex/personal-agents/docs/personal-agents.md) for that path.
 
 ## Install
-
-### Codex
-
-```sh
-codex plugin marketplace add https://github.com/cshenx/marketplace.git
-codex plugin add agentpeers@agenteer-public
-```
 
 ### Claude Code
 
 ```sh
 claude plugin marketplace add https://github.com/cshenx/marketplace.git
 claude plugin install agentpeers@agenteer-public --scope user
+```
+
+### Codex
+
+```sh
+codex plugin marketplace add https://github.com/cshenx/marketplace.git
+codex plugin add agentpeers@agenteer-public
 ```
 
 Reload plugins or open a fresh session after installation. Each plugin's README covers its requirements, setup and usage.
