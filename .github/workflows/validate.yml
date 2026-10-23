@@ -35,7 +35,7 @@ jobs:
               url = urlsplit(source['url'])
               assert url.scheme == 'https' and url.netloc == 'github.com'
               assert not (url.username or url.password or url.query or url.fragment)
-              assert url.path.startswith('/agenteer/') and url.path.endswith('.git')
+              assert url.path.startswith('/cshenx/') and url.path.endswith('.git')
               assert f'https://github.com{url.path[:-4]}' in Path('README.md').read_text()
           print('Both catalogs agree; plugin names, HTTPS sources and README links checked.')
           PY
