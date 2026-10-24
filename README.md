@@ -4,7 +4,9 @@ Plugins for Claude Code and Codex, published by [Agenteer](https://agenteer.com)
 
 | Plugin | What it does |
 | --- | --- |
-| [AgentPeers](https://github.com/cshenx/agentpeers) | Let your Claude Code and Codex sessions talk to each other. |
+| [AgentPeers](https://github.com/cshenx/agentpeers) | The local plugin for AgentPeers: connect Claude Code and Codex sessions. |
+
+AgentPeers connects existing AI agents across platforms. This catalog installs its **local Claude Code ↔ Codex plugin**. The separate **Grokbot ↔ Dot 0.7 preview** uses a service you deploy in your Cloudflare account or on your own server; follow the [AgentPeers setup guide](https://github.com/cshenx/agentpeers/blob/codex/personal-agents/docs/personal-agents.md) for that path.
 
 ## Install
 
@@ -29,8 +31,8 @@ Reload plugins or open a fresh session after installation. Each plugin's README 
 Use your client's plugin manager to check for updates. To refresh this catalog:
 
 ```sh
-claude plugin marketplace update agenteer-public
 codex plugin marketplace upgrade agenteer-public
+claude plugin marketplace update agenteer-public
 ```
 
 ## About this catalog
