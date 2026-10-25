@@ -10,7 +10,7 @@
         "source": "url",
         "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "The AgentPeers local connection: Claude Code ↔ Codex sessions.",
+      "description": "Let your agents talk across platforms: Grokbot ↔ Dot and Claude Code ↔ Codex.",
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
