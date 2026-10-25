@@ -11,7 +11,7 @@
         "source": "url",
         "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "Let your agents talk across platforms: Grokbot ↔ Dot and Claude Code ↔ Codex.",
+      "description": "Let your agents talk across platforms: Grokbot ↔ Dot, Claude Code ↔ Codex, and factual questions from ChatGPT to Dot.",
       "homepage": "https://github.com/cshenx/agentpeers",
       "license": "MIT"
     }

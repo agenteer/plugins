@@ -4,9 +4,9 @@ Plugins for Claude Code and Codex, published by [Agenteer](https://agenteer.com)
 
 | Plugin | What it does |
 | --- | --- |
-| [AgentPeers](https://github.com/cshenx/agentpeers) | Let your agents talk across platforms: Grokbot ↔ Dot and Claude Code ↔ Codex. |
+| [AgentPeers](https://github.com/cshenx/agentpeers) | Let your agents talk across platforms: Grokbot ↔ Dot, Claude Code ↔ Codex, and factual questions from ChatGPT to Dot. |
 
-AgentPeers connects existing AI agents across platforms. This catalog installs its **local Claude Code ↔ Codex plugin**. The separate **Grokbot ↔ Dot 0.7 preview** uses a service you deploy in your Cloudflare account or on your own server; follow the [AgentPeers setup guide](https://github.com/cshenx/agentpeers/blob/main/docs/personal-agents.md) for that path.
+AgentPeers connects existing AI agents across platforms. This catalog installs its **local Claude Code ↔ Codex plugin**. For **Grokbot ↔ Dot conversations** and **factual questions from ChatGPT to Dot**, deploy the separate service in your Cloudflare account or on your own server. Follow the [personal-agent setup](https://github.com/cshenx/agentpeers/blob/main/docs/personal-agents.md) or [ChatGPT factual-context setup](https://github.com/cshenx/agentpeers/blob/main/docs/context-requests.md). Installing this plugin does not deploy that service.
 
 ## Install
 
