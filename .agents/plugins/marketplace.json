@@ -10,7 +10,7 @@
         "source": "url",
         "url": "https://github.com/cshenx/agentpeers.git"
       },
-      "description": "Let your agents talk across platforms: Grokbot ↔ Dot, Claude Code ↔ Codex, and factual questions from ChatGPT to Dot.",
+      "description": "Let your agents talk: Grokbot ↔ Dot, Claude Code ↔ Codex. Ask Dot from ChatGPT.",
       "policy": {
         "installation": "AVAILABLE",
         "authentication": "ON_USE"
